@@ -35,8 +35,8 @@ public class Main {
         num1 = Integer.parseInt(arrStr[0]);
         num2 = Integer.parseInt(arrStr[1]);
 
-        if (num1 > 10 || num2 > 10) {
-            throw new Exception("Числа должны быть до 10");
+        if (num1 < 1 || num1 > 10 || num2 < 1 || num2 > 10) {
+            throw new Exception("Числа должны быть от 1 до 10");
         }
 
         int result = 0;
